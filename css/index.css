@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --main-border: #000000;
+    --input-border: #e63f0d;
+    --gradiend-breack1: #000000;
+    --gradiend-breack2: #ffffff;
+    --main-bg: #272525;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, var(--gradiend-breack1), var(--gradiend-breack2));
+}
+
+main{
+    padding: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--main-bg);
+    box-shadow: #000000 5px 8px 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.form-group{
+    border-radius: 7px;
+    border: 2px solid var(--input-border);
+    padding: 5px;
+}
+
+.button{
+    padding: 4px;
+    border-radius: 7px;
+    border: none;
+    background-color: #0c0c0c;
+    color:#ffffff;
+    font-weight: bold;
+    
+    cursor: pointer;
+}
